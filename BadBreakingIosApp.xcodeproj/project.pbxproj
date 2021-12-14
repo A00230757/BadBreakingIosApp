@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1856B03B2768F0EB006FE37F /* CharacterGroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B03A2768F0EB006FE37F /* CharacterGroupTableViewController.swift */; };
+		1856B03D2768F11E006FE37F /* CharacterGroupDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B03C2768F11E006FE37F /* CharacterGroupDetailViewController.swift */; };
+		1856B03F2768F9BC006FE37F /* CharacterLimitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B03E2768F9BC006FE37F /* CharacterLimitTableViewController.swift */; };
+		1856B0412768F9D5006FE37F /* CharacterLimitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B0402768F9D5006FE37F /* CharacterLimitDetailViewController.swift */; };
+		1856B0432768FE4B006FE37F /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B0422768FE4B006FE37F /* Episode.swift */; };
+		1856B0452768FE5C006FE37F /* EpisodeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B0442768FE5C006FE37F /* EpisodeList.swift */; };
 		185BE0FA275E888300D2A216 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185BE0F9275E888300D2A216 /* Character.swift */; };
 		185BE0FC275E8AF100D2A216 /* CharacterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185BE0FB275E8AF100D2A216 /* CharacterList.swift */; };
 		185BE0FE275E8B8800D2A216 /* CharacterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185BE0FD275E8B8800D2A216 /* CharacterTableViewController.swift */; };
 		185BE100275E98F100D2A216 /* MainCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185BE0FF275E98F100D2A216 /* MainCharacterViewController.swift */; };
+		185BE102275EA34800D2A216 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185BE101275EA34800D2A216 /* CharacterDetailViewController.swift */; };
 		18CC53AF2756B813000115DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC53AE2756B813000115DA /* AppDelegate.swift */; };
 		18CC53B12756B813000115DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC53B02756B813000115DA /* SceneDelegate.swift */; };
 		18CC53B62756B813000115DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CC53B42756B813000115DA /* Main.storyboard */; };
@@ -20,10 +27,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1856B03A2768F0EB006FE37F /* CharacterGroupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGroupTableViewController.swift; sourceTree = "<group>"; };
+		1856B03C2768F11E006FE37F /* CharacterGroupDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGroupDetailViewController.swift; sourceTree = "<group>"; };
+		1856B03E2768F9BC006FE37F /* CharacterLimitTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterLimitTableViewController.swift; sourceTree = "<group>"; };
+		1856B0402768F9D5006FE37F /* CharacterLimitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterLimitDetailViewController.swift; sourceTree = "<group>"; };
+		1856B0422768FE4B006FE37F /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		1856B0442768FE5C006FE37F /* EpisodeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeList.swift; sourceTree = "<group>"; };
 		185BE0F9275E888300D2A216 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		185BE0FB275E8AF100D2A216 /* CharacterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterList.swift; sourceTree = "<group>"; };
 		185BE0FD275E8B8800D2A216 /* CharacterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewController.swift; sourceTree = "<group>"; };
 		185BE0FF275E98F100D2A216 /* MainCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCharacterViewController.swift; sourceTree = "<group>"; };
+		185BE101275EA34800D2A216 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 		18CC53AB2756B813000115DA /* BadBreakingIosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BadBreakingIosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CC53AE2756B813000115DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18CC53B02756B813000115DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +89,13 @@
 				185BE0FB275E8AF100D2A216 /* CharacterList.swift */,
 				185BE0FD275E8B8800D2A216 /* CharacterTableViewController.swift */,
 				185BE0FF275E98F100D2A216 /* MainCharacterViewController.swift */,
+				185BE101275EA34800D2A216 /* CharacterDetailViewController.swift */,
+				1856B03A2768F0EB006FE37F /* CharacterGroupTableViewController.swift */,
+				1856B03C2768F11E006FE37F /* CharacterGroupDetailViewController.swift */,
+				1856B03E2768F9BC006FE37F /* CharacterLimitTableViewController.swift */,
+				1856B0402768F9D5006FE37F /* CharacterLimitDetailViewController.swift */,
+				1856B0422768FE4B006FE37F /* Episode.swift */,
+				1856B0442768FE5C006FE37F /* EpisodeList.swift */,
 			);
 			path = BadBreakingIosApp;
 			sourceTree = "<group>";
@@ -150,10 +171,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				18CC53B92756B813000115DA /* BadBreakingIosApp.xcdatamodeld in Sources */,
+				1856B0412768F9D5006FE37F /* CharacterLimitDetailViewController.swift in Sources */,
+				1856B03B2768F0EB006FE37F /* CharacterGroupTableViewController.swift in Sources */,
+				1856B0452768FE5C006FE37F /* EpisodeList.swift in Sources */,
 				185BE100275E98F100D2A216 /* MainCharacterViewController.swift in Sources */,
+				1856B03D2768F11E006FE37F /* CharacterGroupDetailViewController.swift in Sources */,
 				185BE0FE275E8B8800D2A216 /* CharacterTableViewController.swift in Sources */,
 				18CC53AF2756B813000115DA /* AppDelegate.swift in Sources */,
+				1856B0432768FE4B006FE37F /* Episode.swift in Sources */,
 				185BE0FC275E8AF100D2A216 /* CharacterList.swift in Sources */,
+				185BE102275EA34800D2A216 /* CharacterDetailViewController.swift in Sources */,
+				1856B03F2768F9BC006FE37F /* CharacterLimitTableViewController.swift in Sources */,
 				18CC53B12756B813000115DA /* SceneDelegate.swift in Sources */,
 				185BE0FA275E888300D2A216 /* Character.swift in Sources */,
 			);

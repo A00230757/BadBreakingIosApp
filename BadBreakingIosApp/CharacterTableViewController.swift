@@ -86,7 +86,7 @@ class CharacterTableViewController: UITableViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   // override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         
@@ -94,7 +94,26 @@ class CharacterTableViewController: UITableViewController {
        // let dst = segue.destination as! CharacterDetailViewController
                         //dst.name = characterList.list[tableView.indexPathForSelectedRow!.row].name
         
-    }
+   // }
+ 
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        
+        
+        let dst = segue.destination as! CharacterDetailViewController
+        dst.characterList = characterList
+        dst.n = characterList.list[tableView.indexPathForSelectedRow!.row].name
+        dst.cid = characterList.list[tableView.indexPathForSelectedRow!.row].charid
+        dst.b = characterList.list[tableView.indexPathForSelectedRow!.row].birthday
+        dst.oc = characterList.list[tableView.indexPathForSelectedRow!.row].occupation
+        dst.st = characterList.list[tableView.indexPathForSelectedRow!.row].status
+        dst.nickn = characterList.list[tableView.indexPathForSelectedRow!.row].nickname
+        dst.port = characterList.list[tableView.indexPathForSelectedRow!.row].portrayed
+        dst.imgpath = characterList.list[tableView.indexPathForSelectedRow!.row].imagepath
+        dst.app = characterList.list[tableView.indexPathForSelectedRow!.row].appearance
+    }
 
 }

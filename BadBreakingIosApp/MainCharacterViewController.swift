@@ -10,12 +10,27 @@ import UIKit
 class MainCharacterViewController: UIViewController {
 
     var characterList = CharacterList()
+    var characterListGroup = CharacterList()
+    var characterListLimit = CharacterList()
     var character: Character!
-   
-    var myArray = [Character]()
+    
+    var allUrl = "https://www.breakingbadapi.com/api/characters";
+    var catUrl = "https://www.breakingbadapi.com/api/characters?category=Better+Call+Saul"
+    var limitUrl = "https://www.breakingbadapi.com/api/characters?limit=10&offset=10"
+   // var myArray = [Character]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        getData(url: allUrl,type: "all")
+        getData(url: catUrl, type: "cat")
+        getData(url: limitUrl, type: "limit")
+        
+       
+        // Do any additional setup after loading the view.
+    }
+    
+
+    func getData(url: String , type:String){
         var yourArray = [Character]()
         
         let session: URLSession = {
@@ -23,7 +38,7 @@ class MainCharacterViewController: UIViewController {
             return URLSession(configuration: config)
         }()
         
-        let fileUrl = URL(string: "https://www.breakingbadapi.com/api/characters")
+        let fileUrl = URL(string: url)
         let request = URLRequest(url: fileUrl!)
         let task = session.dataTask(with: request){
             (data, response, error) -> Void in
@@ -65,7 +80,31 @@ class MainCharacterViewController: UIViewController {
                             // print("portrayed : ",jsonArray[0]["portrayed"]!)
                              //print("--------------")
                             // print("        ")
-                             yourArray.append( Character(name: single["name"]! as! String,charid: single["name"]! as! String,birthday:single["birthday"]! as! String,occupation: single["name"]! as! String,imagepath: single["img"]! as! String,status: single["status"]! as! String,appearance: single["name"]! as! String,nickname: single["nickname"]! as! String,portrayed: single["portrayed"]! as! String));
+                            
+                            let cid = String(single["char_id"]! as! Int);
+                        
+                            var occp = single["occupation"]! as! Any;
+                   
+                            var appe = single["appearance"]! as! Any;
+                         
+                            print("qqqq: ",cid,"--",occp,"---",appe)
+                            var arr1 = NSArray(objects: occp)
+
+                            var objCArray1 = NSMutableArray(array: arr1)
+
+                            //if let swiftArray = objCArray as NSArray as? [String] {
+
+                            let swiftArray1 = objCArray1 as NSArray
+                            print(swiftArray1[0])
+                            var arr2 = NSArray(objects: appe)
+
+                            var objCArray2 = NSMutableArray(array: arr2)
+
+                            //if let swiftArray = objCArray as NSArray as? [String] {
+
+                            let swiftArray2 = objCArray2 as NSArray
+                            
+                            yourArray.append( Character(name: single["name"]! as! String,charid: cid as String,birthday:single["birthday"]! as! String,occupation: single["name"]! as! String,imagepath: single["img"]! as! String,status: single["status"]! as! String,appearance: single["name"]! as! String,nickname: single["nickname"]! as! String,portrayed: single["portrayed"]! as! String));
                         }
                     } else {
                         print("bad json string")
@@ -84,7 +123,17 @@ class MainCharacterViewController: UIViewController {
                         
                             if n != nil && c != nil && b != nil && o != nil && i != nil && st != nil && a != nil && nick != nil && p != nil{
                             //print(a!)
-                                self.characterList.list.append(Character(name: n!, charid: c!, birthday: b!, occupation: o!, imagepath: i!, status: st!, appearance: a!, nickname: nick!, portrayed: p!))
+                                
+                                if (type == "all"){
+                                    self.characterList.list.append(Character(name: n!, charid: c!, birthday: b!, occupation: o!, imagepath: i!, status: st!, appearance: a!, nickname: nick!, portrayed: p!))
+                                }
+                                if (type == "cat"){
+                                    self.characterListGroup.list.append(Character(name: n!, charid: c!, birthday: b!, occupation: o!, imagepath: i!, status: st!, appearance: a!, nickname: nick!, portrayed: p!))
+                                }
+                                if (type == "limit"){
+                                    self.characterListLimit.list.append(Character(name: n!, charid: c!, birthday: b!, occupation: o!, imagepath: i!, status: st!, appearance: a!, nickname: nick!, portrayed: p!))
+                                }
+                                
                             }
                     }
                     
@@ -109,10 +158,7 @@ class MainCharacterViewController: UIViewController {
             
         }
         task.resume()
-        // Do any additional setup after loading the view.
     }
-    
-
     /*
     // MARK: - Navigation
 
@@ -128,8 +174,26 @@ class MainCharacterViewController: UIViewController {
         // Pass the selected object to the new view controller.
         
         
-        let dst = segue.destination as! CharacterTableViewController
-                        dst.characterList = characterList
+       
+        switch segue.identifier{
+                   case "allcharacterscreen":
+                    let dst = segue.destination as! CharacterTableViewController
+                                    dst.characterList = characterList
+                    
+                       
+                       
+                   case "groupcharacterscreen":
+                    let dst = segue.destination as! CharacterGroupTableViewController
+                                    dst.characterList = characterListGroup
+        case "limitcharacterscreen":
+         let dst = segue.destination as! CharacterLimitTableViewController
+                         dst.characterList = characterListLimit
+                    
+                   
+                   default:
+                       preconditionFailure("seque identifier: \(segue.identifier) was not found")
+
+                   }
         
     }
 
