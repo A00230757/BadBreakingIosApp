@@ -9,19 +9,19 @@ import Foundation
 
 
 
-class EpisodeList{
-    var list = [Episode]()
-    var episode: Episode!
+class DeathList{
+    var list = [Death]()
+    var death: Death!
     
     init(){
     
     }
     
-    func removeEpisode(index: Int){
+    func removeDeath(index: Int){
            list.remove(at: index)
        }
     
-    func moveEpisode(from fromIndex: Int, to toIndex: Int){
+    func moveDeath(from fromIndex: Int, to toIndex: Int){
           let temp = list[fromIndex]
           list.remove(at: fromIndex)
           list.insert(temp, at: toIndex)

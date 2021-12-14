@@ -9,19 +9,19 @@ import Foundation
 
 
 
-class EpisodeList{
-    var list = [Episode]()
-    var episode: Episode!
+class QuoteList{
+    var list = [Quote]()
+    var quote: Quote!
     
     init(){
     
     }
     
-    func removeEpisode(index: Int){
+    func removeQuote(index: Int){
            list.remove(at: index)
        }
     
-    func moveEpisode(from fromIndex: Int, to toIndex: Int){
+    func moveQuote(from fromIndex: Int, to toIndex: Int){
           let temp = list[fromIndex]
           list.remove(at: fromIndex)
           list.insert(temp, at: toIndex)
