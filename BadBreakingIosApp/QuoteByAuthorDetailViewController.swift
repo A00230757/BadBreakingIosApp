@@ -8,53 +8,42 @@
 
 import UIKit
 
-class AllEpisodeDetailViewController: UIViewController {
+class QuoteByAuthorDetailViewController: UIViewController {
 
-    @IBOutlet weak var episode_id: UILabel!
+  
+    @IBOutlet weak var quote_id: UILabel!
     
-    @IBOutlet weak var etitle: UILabel!
+    @IBOutlet weak var quote_label: UILabel!
     
+  
     
-    @IBOutlet weak var season: UILabel!
-    
-    
-   
-    @IBOutlet weak var air_date: UILabel!
-    
-    @IBOutlet weak var characters: UILabel!
+    @IBOutlet weak var author: UILabel!
     
     
-    @IBOutlet weak var epis: UILabel!
-    
-   
     @IBOutlet weak var series: UILabel!
     
     
     
-    var episodeList = EpisodeList()
-    var episode: Episode!
-   
-    var myArray = [Episode]()
     
-    var eid:String!
-    var tit:String!
-    var sea:String!
-    var ad:String!
-    var chars:String!
-    var e:String!
+    
+    var quoteList = QuoteList()
+    var quote: Quote!
+   
+    var myArray = [Quote]()
+    
+    var qid:String!
+    var q:String!
+    var auth:String!
     var ser:String!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("Episode_Id: \(eid!)")
-        episode_id.text = "Episode_Id: \(eid!)"
-        etitle.text = "Title: \(tit!)"
-        season.text = "Season: \(sea!)"
-        air_date.text = "Air_Date: \(air_date!)"
-        characters.text = "Characters: \(chars!)"
-        epis.text = "Episode: \(e!)"
+        print("Quote_Id: \(qid!)")
+       quote_id.text = "Quote_Id: \(qid!)"
+        quote_label.text = "Quote: \(q!)"
+       author.text = "Author: \(auth!)"
         series.text = "Series: \(ser!)"
         // Do any additional setup after loading the view.
 //        fetchRamdomImage { [self]
@@ -85,4 +74,6 @@ class AllEpisodeDetailViewController: UIViewController {
     */
 
 }
+
+
 

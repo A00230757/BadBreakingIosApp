@@ -8,17 +8,17 @@
 
 import UIKit
 
-class SeriesEpisodeTableViewController: UITableViewController {
+class QuoteByAuthorTableViewController: UITableViewController {
 
 //    @IBAction func reload(_ sender: Any) {
 //
 //        tableView.reloadData()
 //    }
     
-    var episodeList = EpisodeList()
-    var episode: Episode!
+    var quoteList = QuoteList()
+    var quote: Quote!
    
-    var myArray = [Episode]()
+    var myArray = [Quote]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,16 +42,16 @@ class SeriesEpisodeTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
    
-        return episodeList.list.count
+        return quoteList.list.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "seriesepisodedetail", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "quotebyauthordetail", for: indexPath)
 
         cell.textLabel?.text = String(indexPath.row + 1)
                let index = indexPath.row
-               cell.detailTextLabel?.text = episodeList.list[index].title
+               cell.detailTextLabel?.text = quoteList.list[index].author
                
                return cell
 
@@ -65,7 +65,7 @@ class SeriesEpisodeTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-            episodeList.removeEpisode(index: indexPath.row)
+            quoteList.removeQuote(index: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -76,7 +76,7 @@ class SeriesEpisodeTableViewController: UITableViewController {
     
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-        episodeList.moveEpisode(from: fromIndexPath.row, to: to.row)
+        quoteList.moveQuote(from: fromIndexPath.row, to: to.row)
     }
     
 
@@ -103,18 +103,15 @@ class SeriesEpisodeTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         
         
-        
-        let dst = segue.destination as! SeriesEpisodeDetailViewController
-        dst.episodeList = episodeList
-        dst.eid = episodeList.list[tableView.indexPathForSelectedRow!.row].episode_id
-        dst.tit = episodeList.list[tableView.indexPathForSelectedRow!.row].title
-        dst.sea = episodeList.list[tableView.indexPathForSelectedRow!.row].season
-        dst.ad = episodeList.list[tableView.indexPathForSelectedRow!.row].air_date
-        dst.chars = episodeList.list[tableView.indexPathForSelectedRow!.row].characters
-        dst.e = episodeList.list[tableView.indexPathForSelectedRow!.row].episode
-        dst.ser = episodeList.list[tableView.indexPathForSelectedRow!.row].series
+        let dst = segue.destination as! QuoteByAuthorDetailViewController
+        dst.quoteList = quoteList
+        dst.qid = quoteList.list[tableView.indexPathForSelectedRow!.row].quote_id
+        dst.q = quoteList.list[tableView.indexPathForSelectedRow!.row].quote
+        dst.auth = quoteList.list[tableView.indexPathForSelectedRow!.row].author
+        dst.ser = quoteList.list[tableView.indexPathForSelectedRow!.row].series
      }
 
 }
+
 
 
