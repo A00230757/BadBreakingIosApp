@@ -7,21 +7,21 @@
 
 import UIKit
 
-class MainQuoteViewController: UIViewController {
+class MainDeathViewController: UIViewController {
 
-    var quoteList = QuoteList()
-    var quoteListAuthor = QuoteList()
-    var quote: Quote!
+    var allDeathList = DeathList()
+    //var quoteListAuthor = QuoteList()
+    var death: Death!
     
-    var allUrl = "https://www.breakingbadapi.com/api/quotes";
-    var authorUrl = "https://www.breakingbadapi.com/api/quote?author=Jesse+Pinkman"
+    var allUrl = "https://www.breakingbadapi.com/api/deaths";
+    //var authorUrl = "https://www.breakingbadapi.com/api/quote?author=Jesse+Pinkman"
     
    // var myArray = [Character]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getData(url: allUrl,type: "all")
-        getData(url: authorUrl, type: "author")
+       // getData(url: authorUrl, type: "author")
         
        
         // Do any additional setup after loading the view.
@@ -29,7 +29,7 @@ class MainQuoteViewController: UIViewController {
     
 
     func getData(url: String , type:String){
-        var yourArray = [Quote]()
+        var yourArray = [Death]()
         
         let session: URLSession = {
             let config = URLSessionConfiguration.default
@@ -67,31 +67,35 @@ class MainQuoteViewController: UIViewController {
                         print(jsonArray.count)
                         for single in jsonArray{
                         
-                            let quote_id = String(single["quote_id"]! as! Int);
+                            let death_id = String(single["death_id"]! as! Int);
+                            let season = String(single["season"]! as! Int);
+                            let episode = String(single["episode"]! as! Int);
+                            let number_of_deaths = String(single["number_of_deaths"]! as! Int);
                             
-                            yourArray.append( Quote(quote_id: quote_id ,quote: single["author"]! as! String,author: single["author"]! as! String,series: single["series"]! as! String));
+                            yourArray.append( Death(death_id: death_id as! String,death: single["death"]! as! String,cause: single["cause"]! as! String,responsible: single["responsible"]! as! String,last_words: single["last_words"]! as! String,season: season as! String,episode: episode as! String,number_of_deaths: number_of_deaths as! String));
                         }
                     } else {
                         print("bad json string")
                     }
                     
                     for s in yourArray{
-                        let qid: String? = s.quote_id
-                        let q: String? = s.quote
-                        let a: String? = s.author
-                        let ser: String? = s.series
+                        let did: String? = s.death_id
+                        let d: String? = s.death
+                        let c: String? = s.cause
+                        let r: String? = s.responsible
+                        let lw: String? = s.last_words
+                        let sea: String? = s.season
+                        let e: String? = s.episode
+                        let nod:String = s.number_of_deaths
                         
-                            if qid != nil && q != nil && a != nil && ser != nil{
+                            if did != nil && d != nil && c != nil && r != nil && lw != nil && sea != nil && e != nil && nod != nil{
                             //print(a!)
-                                
+
                                 if (type == "all"){
-                                    self.quoteList.list.append(Quote(quote_id: qid!,quote:q!,author: a!,series: ser!))
+                                    self.allDeathList.list.append(Death(death_id:did!,death:d!,cause:c!,responsible:r!,last_words:lw!,season: sea!,episode: e!,number_of_deaths: nod))
                                 }
-                                if (type == "author"){
-                                    self.quoteListAuthor.list.append(Quote(quote_id: qid!,quote:q!,author: a!,series: ser!))
-                                }
-                               
-                                
+
+
                             }
                     }
                     
@@ -134,16 +138,16 @@ class MainQuoteViewController: UIViewController {
         
        
         switch segue.identifier{
-                   case "getallquotes":
-                    let dst = segue.destination as! AllQuoteTableViewController
-                                    dst.quoteList = quoteList
+                   case "alldeathinfo":
+                    let dst = segue.destination as! AllDeathInfoTableViewController
+                                    dst.allDeathList = allDeathList
                     
                        
                        
-                   case "getquotebyauthor":
-                    let dst = segue.destination as! QuoteByAuthorTableViewController
-                                    dst.quoteList = quoteListAuthor
-        
+//                   case "getquotebyauthor":
+//                    let dst = segue.destination as! QuoteByAuthorTableViewController
+//                                    dst.quoteList = quoteListAuthor
+//
                    
                    default:
                        preconditionFailure("seque identifier: \(segue.identifier) was not found")
@@ -153,5 +157,6 @@ class MainQuoteViewController: UIViewController {
     }
 
 }
+
 
 

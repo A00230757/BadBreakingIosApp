@@ -8,38 +8,53 @@
 
 import UIKit
 
-class AllQuoteDetailViewController: UIViewController {
+class AllDeathInfoDetailViewController: UIViewController {
 
   
+
+    @IBOutlet weak var death_id: UILabel!
+    
+    @IBOutlet weak var death_label: UILabel!
+    
+    @IBOutlet weak var cause: UILabel!
+    
+    @IBOutlet weak var responsible: UILabel!
+    
+    @IBOutlet weak var last_words: UILabel!
+    
+    @IBOutlet weak var season: UILabel!
+    @IBOutlet weak var episode: UILabel!
+    
+    @IBOutlet weak var number_of_deaths: UILabel!
     
     
-    
-    var quoteList = QuoteList()
-    var quote: Quote!
+    var allDeathList = DeathList()
+    var death: Death!
    
     var myArray = [Quote]()
     
-    @IBOutlet weak var quote_id: UILabel!
-    @IBOutlet weak var quote_label: UILabel!
-    
-    @IBOutlet weak var author: UILabel!
-    @IBOutlet weak var series: UILabel!
-    
-    var qid:String!
-    var q:String!
-    var auth:String!
-    var ser:String!
+    var did: String!
+    var d: String!
+    var c: String!
+    var r: String!
+    var lw: String!
+    var sea: String!
+    var e: String!
+    var nod:String!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("Quote_Id: ")
-//       quote_id.text = "Quote_Id: \(qid!)"
-//        quote_label.text = "Quote: \(q!)"
-//       author.text = "Author: \(auth!)"
-//        series.text = "Series: \(ser!)"
-        
+        print("Death_Id: \(did!)")
+       death_id.text = "Death_Id: \(did!)"
+        death_label.text = "Death: \(d!)"
+       cause.text = "Cause: \(c!)"
+        responsible.text = "Responsible: \(r!)"
+        last_words.text = "Last_Words: \(lw!)"
+        season.text = "Season: \(sea!)"
+        episode.text = "Episode: \(e!)"
+        number_of_deaths.text = "Number_Of_Deaths: \(nod!)"
         // Do any additional setup after loading the view.
 //        fetchRamdomImage { [self]
 //                   (remoteUrl) in
@@ -69,5 +84,7 @@ class AllQuoteDetailViewController: UIViewController {
     */
 
 }
+
+
 
 

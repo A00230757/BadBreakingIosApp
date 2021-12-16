@@ -12,6 +12,9 @@
 		184F03A2276A706D0030F25D /* QuoteByAuthorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F03A1276A706D0030F25D /* QuoteByAuthorDetailViewController.swift */; };
 		184F03A4276A70890030F25D /* AllQuoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F03A3276A70890030F25D /* AllQuoteTableViewController.swift */; };
 		184F03A6276A709C0030F25D /* QuoteByAuthorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F03A5276A709C0030F25D /* QuoteByAuthorTableViewController.swift */; };
+		184F03A8276B81580030F25D /* MainDeathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F03A7276B81580030F25D /* MainDeathViewController.swift */; };
+		184F03AA276B81780030F25D /* AllDeathInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F03A9276B81780030F25D /* AllDeathInfoTableViewController.swift */; };
+		184F03AC276B81A60030F25D /* AllDeathInfoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F03AB276B81A60030F25D /* AllDeathInfoDetailViewController.swift */; };
 		1856B03B2768F0EB006FE37F /* CharacterGroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B03A2768F0EB006FE37F /* CharacterGroupTableViewController.swift */; };
 		1856B03D2768F11E006FE37F /* CharacterGroupDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B03C2768F11E006FE37F /* CharacterGroupDetailViewController.swift */; };
 		1856B03F2768F9BC006FE37F /* CharacterLimitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B03E2768F9BC006FE37F /* CharacterLimitTableViewController.swift */; };
@@ -46,6 +49,9 @@
 		184F03A1276A706D0030F25D /* QuoteByAuthorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteByAuthorDetailViewController.swift; sourceTree = "<group>"; };
 		184F03A3276A70890030F25D /* AllQuoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllQuoteTableViewController.swift; sourceTree = "<group>"; };
 		184F03A5276A709C0030F25D /* QuoteByAuthorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteByAuthorTableViewController.swift; sourceTree = "<group>"; };
+		184F03A7276B81580030F25D /* MainDeathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDeathViewController.swift; sourceTree = "<group>"; };
+		184F03A9276B81780030F25D /* AllDeathInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDeathInfoTableViewController.swift; sourceTree = "<group>"; };
+		184F03AB276B81A60030F25D /* AllDeathInfoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDeathInfoDetailViewController.swift; sourceTree = "<group>"; };
 		1856B03A2768F0EB006FE37F /* CharacterGroupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGroupTableViewController.swift; sourceTree = "<group>"; };
 		1856B03C2768F11E006FE37F /* CharacterGroupDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGroupDetailViewController.swift; sourceTree = "<group>"; };
 		1856B03E2768F9BC006FE37F /* CharacterLimitTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterLimitTableViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +144,9 @@
 				184F03A1276A706D0030F25D /* QuoteByAuthorDetailViewController.swift */,
 				184F03A3276A70890030F25D /* AllQuoteTableViewController.swift */,
 				184F03A5276A709C0030F25D /* QuoteByAuthorTableViewController.swift */,
+				184F03A7276B81580030F25D /* MainDeathViewController.swift */,
+				184F03A9276B81780030F25D /* AllDeathInfoTableViewController.swift */,
+				184F03AB276B81A60030F25D /* AllDeathInfoDetailViewController.swift */,
 			);
 			path = BadBreakingIosApp;
 			sourceTree = "<group>";
@@ -219,6 +228,7 @@
 				1856B03B2768F0EB006FE37F /* CharacterGroupTableViewController.swift in Sources */,
 				1856B04B2768FEF5006FE37F /* Death.swift in Sources */,
 				184F03A0276A70440030F25D /* AllQuoteDetailViewController.swift in Sources */,
+				184F03A8276B81580030F25D /* MainDeathViewController.swift in Sources */,
 				1856B0452768FE5C006FE37F /* EpisodeList.swift in Sources */,
 				1856B0492768FEE8006FE37F /* QuoteList.swift in Sources */,
 				185BE100275E98F100D2A216 /* MainCharacterViewController.swift in Sources */,
@@ -229,8 +239,10 @@
 				1856B0432768FE4B006FE37F /* Episode.swift in Sources */,
 				1856B05127690634006FE37F /* SeriesEpisodeTableViewController.swift in Sources */,
 				184F03A4276A70890030F25D /* AllQuoteTableViewController.swift in Sources */,
+				184F03AC276B81A60030F25D /* AllDeathInfoDetailViewController.swift in Sources */,
 				185BE0FC275E8AF100D2A216 /* CharacterList.swift in Sources */,
 				185BE102275EA34800D2A216 /* CharacterDetailViewController.swift in Sources */,
+				184F03AA276B81780030F25D /* AllDeathInfoTableViewController.swift in Sources */,
 				1856B03F2768F9BC006FE37F /* CharacterLimitTableViewController.swift in Sources */,
 				184F03A6276A709C0030F25D /* QuoteByAuthorTableViewController.swift in Sources */,
 				1856B057276906BF006FE37F /* MainEpisodeViewController.swift in Sources */,
