@@ -11,6 +11,18 @@ import UIKit
 class AllQuoteDetailViewController: UIViewController {
 
   
+    @IBOutlet weak var quote_id: UILabel!
+    
+    @IBOutlet weak var quote_label: UILabel!
+    
+  
+    
+    @IBOutlet weak var author: UILabel!
+    
+    
+    @IBOutlet weak var series: UILabel!
+    
+    
     
     
     
@@ -18,12 +30,6 @@ class AllQuoteDetailViewController: UIViewController {
     var quote: Quote!
    
     var myArray = [Quote]()
-    
-    @IBOutlet weak var quote_id: UILabel!
-    @IBOutlet weak var quote_label: UILabel!
-    
-    @IBOutlet weak var author: UILabel!
-    @IBOutlet weak var series: UILabel!
     
     var qid:String!
     var q:String!
@@ -34,12 +40,11 @@ class AllQuoteDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("Quote_Id: ")
-//       quote_id.text = "Quote_Id: \(qid!)"
-//        quote_label.text = "Quote: \(q!)"
-//       author.text = "Author: \(auth!)"
-//        series.text = "Series: \(ser!)"
-        
+        print("Quote_Id: \(qid!)")
+       quote_id.text = "Quote_Id: \(qid!)"
+        quote_label.text = "Quote: \(q!)"
+       author.text = "Author: \(auth!)"
+        series.text = "Series: \(ser!)"
         // Do any additional setup after loading the view.
 //        fetchRamdomImage { [self]
 //                   (remoteUrl) in
@@ -69,5 +74,7 @@ class AllQuoteDetailViewController: UIViewController {
     */
 
 }
+
+
 
 

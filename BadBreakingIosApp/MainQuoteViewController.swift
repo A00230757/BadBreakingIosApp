@@ -11,18 +11,22 @@ class MainQuoteViewController: UIViewController {
 
     var quoteList = QuoteList()
     var quoteListAuthor = QuoteList()
+    var quoteByIdList = QuoteList()
+    var randomQuoteList = QuoteList()
     var quote: Quote!
     
     var allUrl = "https://www.breakingbadapi.com/api/quotes";
     var authorUrl = "https://www.breakingbadapi.com/api/quote?author=Jesse+Pinkman"
-    
+    var quoteidUrl = "https://www.breakingbadapi.com/api/quotes/1"
+    var randomquoteUrl = "https://www.breakingbadapi.com/api/quote/random"
    // var myArray = [Character]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getData(url: allUrl,type: "all")
         getData(url: authorUrl, type: "author")
-        
+        getData(url: quoteidUrl, type: "id")
+        getData(url: randomquoteUrl, type: "random")
        
         // Do any additional setup after loading the view.
     }
@@ -90,7 +94,12 @@ class MainQuoteViewController: UIViewController {
                                 if (type == "author"){
                                     self.quoteListAuthor.list.append(Quote(quote_id: qid!,quote:q!,author: a!,series: ser!))
                                 }
-                               
+                                if (type == "id"){
+                                    self.quoteByIdList.list.append(Quote(quote_id: qid!,quote:q!,author: a!,series: ser!))
+                                }
+                                if (type == "random"){
+                                    self.randomQuoteList.list.append(Quote(quote_id: qid!,quote:q!,author: a!,series: ser!))
+                                }
                                 
                             }
                     }
@@ -144,6 +153,15 @@ class MainQuoteViewController: UIViewController {
                     let dst = segue.destination as! QuoteByAuthorTableViewController
                                     dst.quoteList = quoteListAuthor
         
+        case "getquotebyid":
+         let dst = segue.destination as! QuoteByIdViewController
+                         dst.quoteList = quoteByIdList
+
+            
+        case "getrandomquote":
+         let dst = segue.destination as! RandomQuoteViewController
+                         dst.quoteList = randomQuoteList
+
                    
                    default:
                        preconditionFailure("seque identifier: \(segue.identifier) was not found")

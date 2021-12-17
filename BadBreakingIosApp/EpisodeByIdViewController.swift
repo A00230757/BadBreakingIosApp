@@ -8,54 +8,44 @@
 
 import UIKit
 
-class AllDeathInfoDetailViewController: UIViewController {
+class EpisodeByIdDetailViewController: UIViewController {
 
-  
-
-    @IBOutlet weak var death_id: UILabel!
     
-    @IBOutlet weak var death_label: UILabel!
-    
-    @IBOutlet weak var cause: UILabel!
-    
-    @IBOutlet weak var responsible: UILabel!
-    
-    @IBOutlet weak var last_words: UILabel!
-    
-    @IBOutlet weak var season: UILabel!
-    @IBOutlet weak var episode: UILabel!
-    
-    @IBOutlet weak var number_of_deaths: UILabel!
-    
-    
-    
-    var allDeathList = DeathList()
-    var death: Death!
+    @IBOutlet weak var episode_id: UILabel!
    
-    var myArray = [Quote]()
+    @IBOutlet weak var etitle: UILabel!
     
-    var did: String!
-    var d: String!
-    var c: String!
-    var r: String!
-    var lw: String!
-    var sea: String!
-    var e: String!
-    var nod:String!
+
+    @IBOutlet weak var season: UILabel!
     
+   
+ 
+    @IBOutlet weak var air_date: UILabel!
+    
+    @IBOutlet weak var characters: UILabel!
+    
+   
+    @IBOutlet weak var epis: UILabel!
+    
+   
+    @IBOutlet weak var series: UILabel!
+    
+    var episodeList = EpisodeList()
+   
+    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("Death_Id: \(did!)")
-       death_id.text = "Death_Id: \(did!)"
-        death_label.text = "Death: \(d!)"
-       cause.text = "Cause: \(c!)"
-        responsible.text = "Responsible: \(r!)"
-        last_words.text = "Last_Words: \(lw!)"
-        season.text = "Season: \(sea!)"
-        episode.text = "Episode: \(e!)"
-        number_of_deaths.text = "Number_Of_Deaths: \(nod!)"
+        print("Episode_Id: \(episodeList.list[0].episode_id)")
+        episode_id.text = "Episode_Id: \(episodeList.list[0].episode_id)"
+        etitle.text = "Title: \(episodeList.list[0].title)"
+        season.text = "Season: \(episodeList.list[0].season)"
+        air_date.text = "Air_Date: \(episodeList.list[0].air_date)"
+        characters.text = "Characters: \(episodeList.list[0].characters)"
+        epis.text = "Episode: \(episodeList.list[0].episode)"
+        series.text = "Series: \(episodeList.list[0].series)"
         // Do any additional setup after loading the view.
 //        fetchRamdomImage { [self]
 //                   (remoteUrl) in
@@ -85,7 +75,5 @@ class AllDeathInfoDetailViewController: UIViewController {
     */
 
 }
-
-
 
 

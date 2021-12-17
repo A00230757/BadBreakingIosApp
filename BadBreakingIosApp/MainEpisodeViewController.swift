@@ -11,10 +11,12 @@ class MainEpisodeViewController: UIViewController {
 
     var episodeList = EpisodeList()
     var episodeListSeries = EpisodeList()
+    var episodeByIdList = EpisodeList()
     var episode: Episode!
     
     var allUrl = "https://www.breakingbadapi.com/api/episodes";
     var seriesUrl = "https://www.breakingbadapi.com/api/episodes?series=Better+Call+Saul"
+    var episodeByIdUrl = "https://www.breakingbadapi.com/api/episodes/60"
     
    // var myArray = [Character]()
     
@@ -22,7 +24,7 @@ class MainEpisodeViewController: UIViewController {
         super.viewDidLoad()
         getData(url: allUrl,type: "all")
         getData(url: seriesUrl, type: "series")
-        
+        getData(url: episodeByIdUrl, type: "byid")
        
         // Do any additional setup after loading the view.
     }
@@ -95,7 +97,9 @@ class MainEpisodeViewController: UIViewController {
                                 if (type == "series"){
                                     self.episodeListSeries.list.append(Episode(episode_id: eid!,title:tit!,season: sea!,air_date: ad!,characters: chars!,episode: e!,series:ser!))
                                 }
-                               
+                                if (type == "byid"){
+                                    self.episodeByIdList.list.append(Episode(episode_id: eid!,title:tit!,season: sea!,air_date: ad!,characters: chars!,episode: e!,series:ser!))
+                                }
                                 
                             }
                     }
@@ -149,6 +153,10 @@ class MainEpisodeViewController: UIViewController {
                     let dst = segue.destination as! SeriesEpisodeTableViewController
                                     dst.episodeList = episodeListSeries
         
+        case "episodebyid":
+         let dst = segue.destination as! EpisodeByIdDetailViewController
+                         dst.episodeList = episodeListSeries
+
                    
                    default:
                        preconditionFailure("seque identifier: \(segue.identifier) was not found")

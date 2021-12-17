@@ -12,20 +12,26 @@ class MainCharacterViewController: UIViewController {
     var characterList = CharacterList()
     var characterListGroup = CharacterList()
     var characterListLimit = CharacterList()
+    var singleCharList = CharacterList()
+    var charByNameList = CharacterList()
     var character: Character!
     
     var allUrl = "https://www.breakingbadapi.com/api/characters";
     var catUrl = "https://www.breakingbadapi.com/api/characters?category=Better+Call+Saul"
     var limitUrl = "https://www.breakingbadapi.com/api/characters?limit=10&offset=10"
    // var myArray = [Character]()
+    var singleCharUrl = "https://www.breakingbadapi.com/api/characters/1"
+    
+    var charByNameUrl = "https://www.breakingbadapi.com/api/characters?name=Walter+White"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getData(url: allUrl,type: "all")
         getData(url: catUrl, type: "cat")
         getData(url: limitUrl, type: "limit")
+        getData(url: singleCharUrl, type: "singlechar")
+        getData(url: charByNameUrl, type: "charbyname")
         
-       
         // Do any additional setup after loading the view.
     }
     
@@ -133,6 +139,12 @@ class MainCharacterViewController: UIViewController {
                                 if (type == "limit"){
                                     self.characterListLimit.list.append(Character(name: n!, charid: c!, birthday: b!, occupation: o!, imagepath: i!, status: st!, appearance: a!, nickname: nick!, portrayed: p!))
                                 }
+                                if (type == "singlechar"){
+                                    self.singleCharList.list.append(Character(name: n!, charid: c!, birthday: b!, occupation: o!, imagepath: i!, status: st!, appearance: a!, nickname: nick!, portrayed: p!))
+                                }
+                                if (type == "charbyname"){
+                                    self.charByNameList.list.append(Character(name: n!, charid: c!, birthday: b!, occupation: o!, imagepath: i!, status: st!, appearance: a!, nickname: nick!, portrayed: p!))
+                                }
                                 
                             }
                     }
@@ -188,6 +200,13 @@ class MainCharacterViewController: UIViewController {
         case "limitcharacterscreen":
          let dst = segue.destination as! CharacterLimitTableViewController
                          dst.characterList = characterListLimit
+            
+        case "getsinglecharacter":
+         let dst = segue.destination as! SingleCharacterViewController
+                         dst.characterList = singleCharList
+        case "characterbyname":
+         let dst = segue.destination as! CharacterByNameViewController
+                         dst.characterList = singleCharList
                     
                    
                    default:
