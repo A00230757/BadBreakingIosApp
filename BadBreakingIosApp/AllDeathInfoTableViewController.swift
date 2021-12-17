@@ -46,6 +46,20 @@ class AllDeathInfoTableViewController: UITableViewController {
     }
 
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+          tableView.deselectRow(at: indexPath, animated: true)
+
+          if let cell = tableView.cellForRow(at: indexPath as IndexPath) {
+              if cell.accessoryType == .checkmark {
+                  cell.accessoryType = .none
+
+              } else {
+                  cell.accessoryType = .checkmark
+
+              }
+          }
+      }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "alldeathinfodetail", for: indexPath)
 
