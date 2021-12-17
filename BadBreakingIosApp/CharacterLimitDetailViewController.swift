@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+//view controller to show all characters  limited  detail data
 class CharacterLimitDetailViewController: UIViewController {
 
     @IBOutlet weak var name: UILabel!

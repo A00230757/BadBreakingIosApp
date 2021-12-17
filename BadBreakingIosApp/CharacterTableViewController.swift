@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+//table view controller to show all characters data
 class CharacterTableViewController: UITableViewController {
 
 //    @IBAction func reload(_ sender: Any) {

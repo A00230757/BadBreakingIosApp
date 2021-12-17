@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+//view controller to show random death info  detail data
 class RandomDeathInfoViewController: UIViewController {
 
   

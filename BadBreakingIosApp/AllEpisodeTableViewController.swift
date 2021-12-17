@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+//table view controller to show all episode data
 class AllEpisodeTableViewController: UITableViewController {
 
 //    @IBAction func reload(_ sender: Any) {

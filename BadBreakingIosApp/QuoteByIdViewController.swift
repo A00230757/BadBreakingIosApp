@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+//view controller to show quote by id  detail data
 class QuoteByIdViewController: UIViewController {
 
   

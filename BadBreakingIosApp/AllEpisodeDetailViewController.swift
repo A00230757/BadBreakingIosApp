@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+//view controller to show all episodes detail data
 class AllEpisodeDetailViewController: UIViewController {
 
     @IBOutlet weak var episode_id: UILabel!

@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+//table view controller to show group characters data
 class CharacterGroupTableViewController: UITableViewController {
 
 //    @IBAction func reload(_ sender: Any) {

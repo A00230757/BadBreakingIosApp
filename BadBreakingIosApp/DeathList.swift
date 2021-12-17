@@ -9,6 +9,7 @@ import Foundation
 
 
 
+//this is a death class list  which has list to store its objects
 class DeathList{
     var list = [Death]()
     var death: Death!

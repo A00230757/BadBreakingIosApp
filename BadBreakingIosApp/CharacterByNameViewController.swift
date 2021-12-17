@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+//view controller to show character by name detail data
 class CharacterByNameViewController: UIViewController {
 
     

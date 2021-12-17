@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+//view controller to show all quote detail data
 class AllQuoteDetailViewController: UIViewController {
 
   

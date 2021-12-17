@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+//view controller to show episode by id  detail data
 class EpisodeByIdDetailViewController: UIViewController {
 
     

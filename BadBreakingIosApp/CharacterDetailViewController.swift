@@ -8,6 +8,7 @@
 
 import UIKit
 
+//view controller to show all characters detail data
 class CharacterDetailViewController: UIViewController {
 
     @IBOutlet weak var name: UILabel!

@@ -9,6 +9,7 @@ import Foundation
 
 
 
+//this is a quote class list  which has list to store its objects
 class QuoteList{
     var list = [Quote]()
     var quote: Quote!

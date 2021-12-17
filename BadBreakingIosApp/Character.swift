@@ -7,6 +7,7 @@
 
 
 import Foundation
+//this is a character class for data members of Character
 class Character: NSObject, NSCoding{
     
     
@@ -20,7 +21,7 @@ class Character: NSObject, NSCoding{
     var nickname:String
     var portrayed:String
     
-
+    //this is a character class constructor  to intialize data members of Character
     init(name: String, charid: String, birthday: String, occupation: String, imagepath: String, status: String , appearance: String, nickname: String, portrayed: String){
         
         self.name = name

@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+//view controller to show random quote detail data
 class RandomQuoteViewController: UIViewController {
 
   

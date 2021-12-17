@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+//view controller to show  episode series  detail data
 class SeriesEpisodeDetailViewController: UIViewController {
 
    

@@ -8,7 +8,7 @@
 import Foundation
 
 
-
+//this is a character class list  which has list to store its objects
 class CharacterList{
     var list = [Character]()
     var character: Character!

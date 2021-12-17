@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+//view controller to show individual death info detail data
 class IndividualDeathInfoViewController: UIViewController {
 
   

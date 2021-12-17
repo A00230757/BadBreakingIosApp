@@ -7,6 +7,7 @@
 
 
 import Foundation
+//this is a episode class for data members of Episode
 class Episode: NSObject, NSCoding{
     
     
@@ -18,7 +19,7 @@ class Episode: NSObject, NSCoding{
     var episode:String
     var series:String
     
-
+    //this is a episode class constructor  to intialize data members of Episode
     init(episode_id: String, title: String, season: String, air_date: String, characters: String, episode: String , series: String){
         
         self.episode_id = episode_id

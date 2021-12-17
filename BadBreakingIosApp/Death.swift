@@ -7,6 +7,7 @@
 
 
 import Foundation
+//this is a death class for data members of Death
 class Death: NSObject, NSCoding{
     
     
@@ -19,7 +20,7 @@ class Death: NSObject, NSCoding{
     var episode:String
     var number_of_deaths:String
     
-
+    //this is a death class constructor  to intialize data members of Death
     init(death_id: String, death: String, cause: String, responsible: String,last_words:String, season: String, episode: String , number_of_deaths: String){
         
         self.death_id = death_id

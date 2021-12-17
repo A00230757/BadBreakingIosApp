@@ -7,8 +7,14 @@
 
 import UIKit
 
+
+
+//this is a character  main viewcontroller which fetch data of different endpoints of character and store in lists for show in table view controllers and view controllers of different endpoints.All the different endpoints screens start from buttons present in this view controller.
+
 class MainCharacterViewController: UIViewController {
 
+    
+    ///lists to store data
     var characterList = CharacterList()
     var characterListGroup = CharacterList()
     var characterListLimit = CharacterList()
@@ -16,6 +22,8 @@ class MainCharacterViewController: UIViewController {
     var charByNameList = CharacterList()
     var character: Character!
     
+    
+    //different endpoint url strings
     var allUrl = "https://www.breakingbadapi.com/api/characters";
     var catUrl = "https://www.breakingbadapi.com/api/characters?category=Better+Call+Saul"
     var limitUrl = "https://www.breakingbadapi.com/api/characters?limit=10&offset=10"
@@ -24,6 +32,7 @@ class MainCharacterViewController: UIViewController {
     
     var charByNameUrl = "https://www.breakingbadapi.com/api/characters?name=Walter+White"
     
+    //same method with url and type to fetch data from different endpoints called in view did load
     override func viewDidLoad() {
         super.viewDidLoad()
         getData(url: allUrl,type: "all")
@@ -35,7 +44,7 @@ class MainCharacterViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+//fetch data and store in lists
     func getData(url: String , type:String){
         var yourArray = [Character]()
         
@@ -186,7 +195,7 @@ class MainCharacterViewController: UIViewController {
         // Pass the selected object to the new view controller.
         
         
-       
+       //open different screens based on identifier set
         switch segue.identifier{
                    case "allcharacterscreen":
                     let dst = segue.destination as! CharacterTableViewController

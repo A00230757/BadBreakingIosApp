@@ -9,6 +9,7 @@ import Foundation
 
 
 
+//this is a episode class list  which has list to store its objects
 class EpisodeList{
     var list = [Episode]()
     var episode: Episode!

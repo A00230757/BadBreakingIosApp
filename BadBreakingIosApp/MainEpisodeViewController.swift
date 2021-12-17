@@ -7,19 +7,26 @@
 
 import UIKit
 
+
+//this is a episode  main viewcontroller which fetch data of different endpoints of episode and store in lists for show in table view controllers and view controllers of different endpoints.All the different endpoints screens start from buttons present in this view controller.
 class MainEpisodeViewController: UIViewController {
 
+    ///lists to store data
     var episodeList = EpisodeList()
     var episodeListSeries = EpisodeList()
     var episodeByIdList = EpisodeList()
     var episode: Episode!
     
+    
+    //different endpoint url strings
     var allUrl = "https://www.breakingbadapi.com/api/episodes";
     var seriesUrl = "https://www.breakingbadapi.com/api/episodes?series=Better+Call+Saul"
     var episodeByIdUrl = "https://www.breakingbadapi.com/api/episodes/60"
     
    // var myArray = [Character]()
     
+    
+    //same method with url and type to fetch data from different endpoints called in view did load
     override func viewDidLoad() {
         super.viewDidLoad()
         getData(url: allUrl,type: "all")
@@ -29,7 +36,7 @@ class MainEpisodeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    //fetch data and store in lists
     func getData(url: String , type:String){
         var yourArray = [Episode]()
         
@@ -141,7 +148,7 @@ class MainEpisodeViewController: UIViewController {
         // Pass the selected object to the new view controller.
         
         
-       
+        //open different screens based on identifier set
         switch segue.identifier{
                    case "getallepisodes":
                     let dst = segue.destination as! AllEpisodeTableViewController

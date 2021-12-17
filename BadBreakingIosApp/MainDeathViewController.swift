@@ -7,18 +7,26 @@
 
 import UIKit
 
+
+//this is a death  main viewcontroller which fetch data of different endpoints of death and store in lists for show in table view controllers and view controllers of different endpoints.All the different endpoints screens start from buttons present in this view controller.
+
 class MainDeathViewController: UIViewController {
 
+    ///lists to store data
     var allDeathList = DeathList()
     var individualDeathList = DeathList()
     var randomDeathList = DeathList()
     var death: Death!
     
+    
+    //different endpoint url strings
     var allUrl = "https://www.breakingbadapi.com/api/deaths";
     var individualUrl = "https://www.breakingbadapi.com/api/death?name=Walter+White"
     var randomUrl = "https://www.breakingbadapi.com/api/random-death"
    // var myArray = [Character]()
     
+    
+    //same method with url and type to fetch data from different endpoints called in view did load
     override func viewDidLoad() {
         super.viewDidLoad()
         getData(url: allUrl,type: "all")
@@ -30,6 +38,8 @@ class MainDeathViewController: UIViewController {
     }
     
 
+    
+//fetch data and store in lists
     func getData(url: String , type:String){
         var yourArray = [Death]()
         
@@ -130,6 +140,8 @@ class MainDeathViewController: UIViewController {
         task.resume()
     }
     
+    
+    //to get random death data
     func getDataRandom(url: String ){
         var yourArray = [Death]()
         
@@ -240,7 +252,7 @@ class MainDeathViewController: UIViewController {
         // Pass the selected object to the new view controller.
         
         
-       
+        //open different screens based on identifier set
         switch segue.identifier{
                    case "alldeathinfo":
                     let dst = segue.destination as! AllDeathInfoTableViewController

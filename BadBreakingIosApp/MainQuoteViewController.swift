@@ -7,20 +7,28 @@
 
 import UIKit
 
+
+//this is a quote main viewcontroller which fetch data of different endpoints of quote and store in lists for show in table view controllers and view controllers of different endpoints.All the different endpoints screens start from buttons present in this view controller.
+
 class MainQuoteViewController: UIViewController {
 
+    ///lists to store data
     var quoteList = QuoteList()
     var quoteListAuthor = QuoteList()
     var quoteByIdList = QuoteList()
     var randomQuoteList = QuoteList()
     var quote: Quote!
     
+    
+    //different endpoint url strings
     var allUrl = "https://www.breakingbadapi.com/api/quotes";
     var authorUrl = "https://www.breakingbadapi.com/api/quote?author=Jesse+Pinkman"
     var quoteidUrl = "https://www.breakingbadapi.com/api/quotes/1"
     var randomquoteUrl = "https://www.breakingbadapi.com/api/quote/random"
    // var myArray = [Character]()
     
+    
+    //same method with url and type to fetch data from different endpoints called in view did load
     override func viewDidLoad() {
         super.viewDidLoad()
         getData(url: allUrl,type: "all")
@@ -31,7 +39,7 @@ class MainQuoteViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    //fetch data and store in lists
     func getData(url: String , type:String){
         var yourArray = [Quote]()
         
@@ -141,7 +149,7 @@ class MainQuoteViewController: UIViewController {
         // Pass the selected object to the new view controller.
         
         
-       
+        //open different screens based on identifier set
         switch segue.identifier{
                    case "getallquotes":
                     let dst = segue.destination as! AllQuoteTableViewController

@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+//view controller to show group characters detail data
 class CharacterGroupDetailViewController: UIViewController {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var charid: UILabel!

@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+//view controller to show quote by author detail data
 class QuoteByAuthorDetailViewController: UIViewController {
 
   

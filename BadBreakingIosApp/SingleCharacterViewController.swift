@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+//view controller to show single character detail data
 class SingleCharacterViewController: UIViewController {
 
     @IBOutlet weak var name: UILabel!

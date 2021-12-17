@@ -7,6 +7,7 @@
 
 
 import Foundation
+//this is a quote class for data members of Quote
 class Quote: NSObject, NSCoding{
     
     
@@ -15,7 +16,7 @@ class Quote: NSObject, NSCoding{
     var author:String
     var series:String
     
-
+    //this is a quote class constructor to intialize data members of Quote
     init(quote_id: String, quote: String, author: String, series: String){
         
         self.quote_id = quote_id
