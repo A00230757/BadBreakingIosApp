@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MAIN INTERFACE-->
         <scene sceneID="8gK-8i-ZgK">
             <objects>
-                <viewController id="kOz-za-afk" sceneMemberID="viewController">
+                <viewController title="MAIN INTERFACE" id="kOz-za-afk" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nbR-Rl-cma">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,7 +50,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yDM-rq-eAw"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DMQ-vv-CgT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -91,7 +91,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CYZ-eE-acX"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="UjD-0C-0kV"/>
                 </viewController>
@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="-749.27536231884062" y="758.70535714285711"/>
         </scene>
-        <!--Episode By Id Detail View Controller-->
+        <!--EPISODE BY ID DETAIL-->
         <scene sceneID="7Rf-na-Vq4">
             <objects>
-                <viewController id="kyJ-aM-f1t" customClass="EpisodeByIdDetailViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="EPISODE BY ID DETAIL" id="kyJ-aM-f1t" customClass="EpisodeByIdDetailViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Myo-2r-zwm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,7 +158,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1vQ-b4-6Ln"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="btI-xV-Css"/>
                     <connections>
@@ -175,14 +175,15 @@
             </objects>
             <point key="canvasLocation" x="-1565.217391304348" y="1441.7410714285713"/>
         </scene>
-        <!--All Episode Table View Controller-->
+        <!--ALL EPISODE TABLE-->
         <scene sceneID="WR9-sH-eh4">
             <objects>
-                <tableViewController id="w8M-Nd-bBT" customClass="AllEpisodeTableViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="ALL EPISODE TABLE" id="w8M-Nd-bBT" customClass="AllEpisodeTableViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="j5G-GA-oBI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="allepisodedetail" textLabel="ETs-yo-GLf" detailTextLabel="gRN-dU-Dn6" style="IBUITableViewCellStyleValue1" id="f8Q-N9-Jhh">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
@@ -223,10 +224,10 @@
             </objects>
             <point key="canvasLocation" x="-752" y="1437"/>
         </scene>
-        <!--All Episode Detail View Controller-->
+        <!--ALL EPISODE DETAIL-->
         <scene sceneID="9YO-3B-Xid">
             <objects>
-                <viewController id="4Y8-cw-Pqj" customClass="AllEpisodeDetailViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ALL EPISODE DETAIL" id="4Y8-cw-Pqj" customClass="AllEpisodeDetailViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wMl-hx-x0B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -282,7 +283,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nRg-G0-tJE"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="0vX-zc-jeq"/>
                     <connections>
@@ -299,10 +300,10 @@
             </objects>
             <point key="canvasLocation" x="106" y="1436"/>
         </scene>
-        <!--All Death Info Table View Controller-->
+        <!--ALL DEATH INFO TABLE-->
         <scene sceneID="sJG-IK-BJM">
             <objects>
-                <tableViewController id="SRj-cI-yfe" customClass="AllDeathInfoTableViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="ALL DEATH INFO TABLE" id="SRj-cI-yfe" customClass="AllDeathInfoTableViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Sup-iq-Mlx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -347,10 +348,10 @@
             </objects>
             <point key="canvasLocation" x="906" y="1436"/>
         </scene>
-        <!--All Death Info Detail View Controller-->
+        <!--ALL DEATH DETAIL-->
         <scene sceneID="Omw-1w-a0p">
             <objects>
-                <viewController id="Mlb-9p-TCy" customClass="AllDeathInfoDetailViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ALL DEATH DETAIL" id="Mlb-9p-TCy" customClass="AllDeathInfoDetailViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fXv-rK-khm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -413,7 +414,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="y0J-7b-ag8"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Svg-AV-Yzm"/>
                     <connections>
@@ -431,10 +432,10 @@
             </objects>
             <point key="canvasLocation" x="1682.608695652174" y="1435.7142857142856"/>
         </scene>
-        <!--Random Quote View Controller-->
+        <!--RANDOM QUOTE DETAIL-->
         <scene sceneID="wHM-W2-faM">
             <objects>
-                <viewController id="FTC-EN-gz3" customClass="RandomQuoteViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="RANDOM QUOTE DETAIL" id="FTC-EN-gz3" customClass="RandomQuoteViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8xH-Fl-CMx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -469,7 +470,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HYp-5Q-Aoq"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="18W-3m-rpG"/>
                     <connections>
@@ -483,14 +484,15 @@
             </objects>
             <point key="canvasLocation" x="2392.753623188406" y="1451.7857142857142"/>
         </scene>
-        <!--Series Episode Table View Controller-->
+        <!--SERIES EPISODE TABLE-->
         <scene sceneID="fsK-a7-obr">
             <objects>
-                <tableViewController id="anf-xg-FT0" customClass="SeriesEpisodeTableViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="SERIES EPISODE TABLE" id="anf-xg-FT0" customClass="SeriesEpisodeTableViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="XTl-Up-y9m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="seriesepisodedetail" textLabel="nOV-d2-lef" detailTextLabel="tKm-kQ-PMk" style="IBUITableViewCellStyleValue1" id="IFo-qw-xLv">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
@@ -531,10 +533,10 @@
             </objects>
             <point key="canvasLocation" x="-752" y="2143"/>
         </scene>
-        <!--Series Episode Detail View Controller-->
+        <!--SERIES EPISODE DETAIL-->
         <scene sceneID="Yf7-Xw-hHA">
             <objects>
-                <viewController id="Y3l-1t-Enc" customClass="SeriesEpisodeDetailViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SERIES EPISODE DETAIL" id="Y3l-1t-Enc" customClass="SeriesEpisodeDetailViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MWd-Ey-tI4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -590,7 +592,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Pk-PK-bsI"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="WQp-Je-Xfz"/>
                     <connections>
@@ -607,10 +609,10 @@
             </objects>
             <point key="canvasLocation" x="36" y="2143"/>
         </scene>
-        <!--Individual Death Info View Controller-->
+        <!--INDIVIDUAL DEATH INFO-->
         <scene sceneID="1SO-VW-lAj">
             <objects>
-                <viewController id="AzI-yT-WlY" customClass="IndividualDeathInfoViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="INDIVIDUAL DEATH INFO" id="AzI-yT-WlY" customClass="IndividualDeathInfoViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fSc-Uv-wqd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -673,7 +675,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="piR-io-zJP"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="lbI-2z-wCA"/>
                     <connections>
@@ -691,10 +693,10 @@
             </objects>
             <point key="canvasLocation" x="800" y="2149"/>
         </scene>
-        <!--Random Death Info View Controller-->
+        <!--RANDOM DEATH INFO-->
         <scene sceneID="hhI-MT-85h">
             <objects>
-                <viewController id="c9t-2G-Va7" customClass="RandomDeathInfoViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="RANDOM DEATH INFO" id="c9t-2G-Va7" customClass="RandomDeathInfoViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SjB-ms-Uym">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -754,7 +756,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fLa-kw-KZp"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="65E-aa-dZU"/>
                     <connections>
@@ -806,7 +808,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="e1U-ZP-Rlw"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="6YQ-1Z-2o1"/>
                 </viewController>
@@ -814,14 +816,15 @@
             </objects>
             <point key="canvasLocation" x="105.79710144927537" y="758.70535714285711"/>
         </scene>
-        <!--Character Table View Controller-->
+        <!--CHARACTER TABLE VIEW-->
         <scene sceneID="ttd-ou-7ve">
             <objects>
-                <tableViewController id="TCH-CW-XTH" customClass="CharacterTableViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="CHARACTER TABLE VIEW" id="TCH-CW-XTH" customClass="CharacterTableViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fxI-cL-4VR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="character" textLabel="GCs-DO-OfK" detailTextLabel="1mq-Jg-UeF" style="IBUITableViewCellStyleValue1" id="dqx-th-S1X">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
@@ -862,10 +865,10 @@
             </objects>
             <point key="canvasLocation" x="906" y="723"/>
         </scene>
-        <!--Character Detail View Controller-->
+        <!--CHARACTER DETAIL-->
         <scene sceneID="eXh-n1-lGA">
             <objects>
-                <viewController id="tiH-0c-YzP" customClass="CharacterDetailViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="CHARACTER DETAIL" id="tiH-0c-YzP" customClass="CharacterDetailViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CDz-OY-GKB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -932,7 +935,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rdc-4q-rC7"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZfA-HB-rAl"/>
                     <connections>
@@ -951,10 +954,10 @@
             </objects>
             <point key="canvasLocation" x="1598.5507246376812" y="722.54464285714278"/>
         </scene>
-        <!--Character Limit Table View Controller-->
+        <!--CHARACTER LIMIT TABLE-->
         <scene sceneID="j56-dp-2SL">
             <objects>
-                <tableViewController id="AVi-oF-Vzu" customClass="CharacterLimitTableViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="CHARACTER LIMIT TABLE" id="AVi-oF-Vzu" customClass="CharacterLimitTableViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eMY-4O-X9H">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -999,10 +1002,10 @@
             </objects>
             <point key="canvasLocation" x="-4" y="-656"/>
         </scene>
-        <!--Character Limit Detail View Controller-->
+        <!--CHARACTER LIMIT TABLE DETAIL-->
         <scene sceneID="tCG-gF-gCk">
             <objects>
-                <viewController id="hCv-YT-4QI" customClass="CharacterLimitDetailViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="CHARACTER LIMIT TABLE DETAIL" id="hCv-YT-4QI" customClass="CharacterLimitDetailViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cSa-Y7-ED7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1069,7 +1072,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Tp4-Ef-smb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="WpY-S0-hfy"/>
                     <connections>
@@ -1088,10 +1091,10 @@
             </objects>
             <point key="canvasLocation" x="689" y="-663"/>
         </scene>
-        <!--Single Character View Controller-->
+        <!--SINGLE CHARACTER-->
         <scene sceneID="lhh-Df-iIY">
             <objects>
-                <viewController id="KxY-md-1t7" customClass="SingleCharacterViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SINGLE CHARACTER" id="KxY-md-1t7" customClass="SingleCharacterViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BvZ-fc-pNp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1158,7 +1161,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XAc-zu-nBh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Dj0-UK-Tmq"/>
                     <connections>
@@ -1177,10 +1180,10 @@
             </objects>
             <point key="canvasLocation" x="1538" y="-659"/>
         </scene>
-        <!--Character By Name View Controller-->
+        <!--CHARACTER BY NAME-->
         <scene sceneID="dTg-MK-erX">
             <objects>
-                <viewController id="hHz-9Y-ul0" customClass="CharacterByNameViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="CHARACTER BY NAME" id="hHz-9Y-ul0" customClass="CharacterByNameViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n4a-1d-3Nx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1247,7 +1250,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mUj-fb-eVK"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="iSa-wH-1dO"/>
                     <connections>
@@ -1316,7 +1319,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZF6-Qc-MTO"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="e6h-my-Ww7"/>
                 </viewController>
@@ -1366,7 +1369,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="y4P-Ns-eRf"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="YEJ-Sp-YSq"/>
                 </viewController>
@@ -1374,14 +1377,15 @@
             </objects>
             <point key="canvasLocation" x="792.75362318840587" y="12.723214285714285"/>
         </scene>
-        <!--All Quote Table View Controller-->
+        <!--ALL QUOTES TABLE-->
         <scene sceneID="7tC-VR-2Ch">
             <objects>
-                <tableViewController id="0fs-aN-ygM" customClass="AllQuoteTableViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="ALL QUOTES TABLE" id="0fs-aN-ygM" customClass="AllQuoteTableViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nZH-25-cQQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="allquotedetail" textLabel="Ool-jl-1n1" detailTextLabel="sK3-nV-yrh" style="IBUITableViewCellStyleValue1" id="Wrg-FA-9o1">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
@@ -1422,10 +1426,10 @@
             </objects>
             <point key="canvasLocation" x="1536" y="3"/>
         </scene>
-        <!--All Quote Detail View Controller-->
+        <!--ALL QUOTE DETAIL-->
         <scene sceneID="OJZ-hQ-Hed">
             <objects>
-                <viewController id="xHd-YE-Hiy" customClass="AllQuoteDetailViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ALL QUOTE DETAIL" id="xHd-YE-Hiy" customClass="AllQuoteDetailViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="42G-Sj-VVc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1460,7 +1464,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="w3l-aD-QWp"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="rhT-27-Q86"/>
                     <connections>
@@ -1474,14 +1478,15 @@
             </objects>
             <point key="canvasLocation" x="2211.594202898551" y="2.6785714285714284"/>
         </scene>
-        <!--Quote By Author Table View Controller-->
+        <!--QUOTE BY AUTHOR TABLE-->
         <scene sceneID="rX9-qd-BIe">
             <objects>
-                <tableViewController id="RB9-td-dPc" customClass="QuoteByAuthorTableViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="QUOTE BY AUTHOR TABLE" id="RB9-td-dPc" customClass="QuoteByAuthorTableViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ryy-Qs-yv7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="quotebyauthordetail" textLabel="fnN-gG-tBK" detailTextLabel="ZoQ-DT-w1b" style="IBUITableViewCellStyleValue1" id="2U2-UR-7pf">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
@@ -1522,10 +1527,10 @@
             </objects>
             <point key="canvasLocation" x="2972" y="13"/>
         </scene>
-        <!--Quote By Author Detail View Controller-->
+        <!--QUOTE BY AUTHOR DETAIL-->
         <scene sceneID="WIP-57-Pdx">
             <objects>
-                <viewController id="LHA-za-Av8" customClass="QuoteByAuthorDetailViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="QUOTE BY AUTHOR DETAIL" id="LHA-za-Av8" customClass="QuoteByAuthorDetailViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zS4-N2-6IL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1560,7 +1565,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jLC-rq-Iik"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="epg-fu-I19"/>
                     <connections>
@@ -1574,10 +1579,10 @@
             </objects>
             <point key="canvasLocation" x="3662.3188405797105" y="19.419642857142858"/>
         </scene>
-        <!--Quote By Id View Controller-->
+        <!--QUOTE BY ID-->
         <scene sceneID="paf-Nt-v2O">
             <objects>
-                <viewController id="7m6-he-d0Q" customClass="QuoteByIdViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="QUOTE BY ID" id="7m6-he-d0Q" customClass="QuoteByIdViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gEx-gM-zra">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1612,7 +1617,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Xz6-Dm-yxU"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="yAK-iV-1Ff"/>
                     <connections>
@@ -1626,14 +1631,15 @@
             </objects>
             <point key="canvasLocation" x="2321.739130434783" y="732.58928571428567"/>
         </scene>
-        <!--Character Group Table View Controller-->
+        <!--CHARACTER GROUP TABLE-->
         <scene sceneID="iZS-Rv-FJC">
             <objects>
-                <tableViewController id="8V4-8W-Bu7" customClass="CharacterGroupTableViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="CHARACTER GROUP TABLE" id="8V4-8W-Bu7" customClass="CharacterGroupTableViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="m2d-VM-J5D">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharacterGroup" textLabel="T5J-0k-T5P" detailTextLabel="zW4-EH-on9" style="IBUITableViewCellStyleValue1" id="w1u-Mb-8vM">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
@@ -1674,10 +1680,10 @@
             </objects>
             <point key="canvasLocation" x="3044" y="728"/>
         </scene>
-        <!--Character Group Detail View Controller-->
+        <!--CHARACTER GROUP DETAIL-->
         <scene sceneID="NiM-Gw-E3D">
             <objects>
-                <viewController id="zeF-5E-hHc" customClass="CharacterGroupDetailViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="CHARACTER GROUP DETAIL" id="zeF-5E-hHc" customClass="CharacterGroupDetailViewController" customModule="BadBreakingIosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IS5-2D-9Qg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1744,7 +1750,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Mo-bG-jem"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.8869660546" blue="0.78489218520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="7bU-lZ-itc"/>
                     <connections>

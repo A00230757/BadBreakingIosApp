@@ -22,6 +22,8 @@
 		184F03B6276C83130030F25D /* RandomQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F03B5276C83130030F25D /* RandomQuoteViewController.swift */; };
 		184F03B8276CA8AB0030F25D /* IndividualDeathInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F03B7276CA8AB0030F25D /* IndividualDeathInfoViewController.swift */; };
 		184F03BA276CA8C00030F25D /* RandomDeathInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F03B9276CA8C00030F25D /* RandomDeathInfoViewController.swift */; };
+		184F03BC276D0F380030F25D /* FavouriteListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F03BB276D0F380030F25D /* FavouriteListTableViewController.swift */; };
+		184F03BE276D0F5B0030F25D /* FavouriteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F03BD276D0F5B0030F25D /* FavouriteListViewController.swift */; };
 		1856B03B2768F0EB006FE37F /* CharacterGroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B03A2768F0EB006FE37F /* CharacterGroupTableViewController.swift */; };
 		1856B03D2768F11E006FE37F /* CharacterGroupDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B03C2768F11E006FE37F /* CharacterGroupDetailViewController.swift */; };
 		1856B03F2768F9BC006FE37F /* CharacterLimitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B03E2768F9BC006FE37F /* CharacterLimitTableViewController.swift */; };
@@ -66,6 +68,8 @@
 		184F03B5276C83130030F25D /* RandomQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuoteViewController.swift; sourceTree = "<group>"; };
 		184F03B7276CA8AB0030F25D /* IndividualDeathInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualDeathInfoViewController.swift; sourceTree = "<group>"; };
 		184F03B9276CA8C00030F25D /* RandomDeathInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDeathInfoViewController.swift; sourceTree = "<group>"; };
+		184F03BB276D0F380030F25D /* FavouriteListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListTableViewController.swift; sourceTree = "<group>"; };
+		184F03BD276D0F5B0030F25D /* FavouriteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListViewController.swift; sourceTree = "<group>"; };
 		1856B03A2768F0EB006FE37F /* CharacterGroupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGroupTableViewController.swift; sourceTree = "<group>"; };
 		1856B03C2768F11E006FE37F /* CharacterGroupDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGroupDetailViewController.swift; sourceTree = "<group>"; };
 		1856B03E2768F9BC006FE37F /* CharacterLimitTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterLimitTableViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +172,8 @@
 				184F03B5276C83130030F25D /* RandomQuoteViewController.swift */,
 				184F03B7276CA8AB0030F25D /* IndividualDeathInfoViewController.swift */,
 				184F03B9276CA8C00030F25D /* RandomDeathInfoViewController.swift */,
+				184F03BB276D0F380030F25D /* FavouriteListTableViewController.swift */,
+				184F03BD276D0F5B0030F25D /* FavouriteListViewController.swift */,
 			);
 			path = BadBreakingIosApp;
 			sourceTree = "<group>";
@@ -262,10 +268,12 @@
 				1856B0432768FE4B006FE37F /* Episode.swift in Sources */,
 				1856B05127690634006FE37F /* SeriesEpisodeTableViewController.swift in Sources */,
 				184F03A4276A70890030F25D /* AllQuoteTableViewController.swift in Sources */,
+				184F03BE276D0F5B0030F25D /* FavouriteListViewController.swift in Sources */,
 				184F03AC276B81A60030F25D /* AllDeathInfoDetailViewController.swift in Sources */,
 				184F03B6276C83130030F25D /* RandomQuoteViewController.swift in Sources */,
 				184F03BA276CA8C00030F25D /* RandomDeathInfoViewController.swift in Sources */,
 				185BE0FC275E8AF100D2A216 /* CharacterList.swift in Sources */,
+				184F03BC276D0F380030F25D /* FavouriteListTableViewController.swift in Sources */,
 				185BE102275EA34800D2A216 /* CharacterDetailViewController.swift in Sources */,
 				184F03AA276B81780030F25D /* AllDeathInfoTableViewController.swift in Sources */,
 				1856B03F2768F9BC006FE37F /* CharacterLimitTableViewController.swift in Sources */,
